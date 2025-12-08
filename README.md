@@ -18,6 +18,27 @@ This project is developed as part of professional skills development and is suit
 
 ---
 
+## Analyst Tooling Context
+
+This AI assistant is designed to support human analysts by structuring and contextualizing findings from common incident response and security analysis tools.
+
+It does **not** perform live detection or response actions. Instead, it operates on observations, indicators, and outputs produced by technical investigation workflows.
+
+Typical analyst tooling inputs may include results from:
+
+- Endpoint investigation (CMD / PowerShell)
+- Network traffic analysis (Wireshark)
+- Case management and incident tracking (TheHive)
+- Log and artifact review from forensic workflows
+
+For reference examples of such analyst tooling and investigation artifacts, see:
+
+📂 **Incident Response Toolkit Repository**  
+https://github.com/allen-camille/INCIDENT-RESPONSE
+
+This design explicitly positions the AI as a **decision-support and analysis layer**, bridging technical findings with structured incident analysis, risk assessment, and regulatory alignment (e.g. NIS2, ISO/IEC 27001).
+
+
 ## Design Principles
 The AI assistant is governed by the following principles:
 
