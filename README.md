@@ -238,6 +238,68 @@ Outputs demonstrate **consistency**, **analytical maturity**, and **governance a
 
 ---
 
+## Scenario-Based Validation
+
+To validate the assistant’s behavior, governance alignment, and analytical quality,
+it was tested using multiple **realistic enterprise security scenarios**.
+
+The scenarios were intentionally selected to represent different incident types
+commonly encountered in **banking, regulated industries, enterprise IT, and the public sector**.
+All scenarios were analyzed strictly as **analytical decision support**, without
+live detection or automated response.
+
+### Scenario 1 – Suspected Account Takeover (ATO)
+The assistant was validated against a suspected account takeover scenario,
+focusing on:
+- Identity and customer risk
+- Unauthorized access indicators
+- Qualitative risk assessment
+- Governance-aware response recommendations
+
+The output demonstrated careful separation between facts and assumptions,
+appropriate risk classification, and responsible escalation guidance without
+overstepping into operational or legal decision-making.
+
+---
+
+### Scenario 2 – Compromised Business-Critical Server
+The assistant was tested using a compromised enterprise server scenario,
+emphasizing:
+- Infrastructure and availability impact
+- Business-critical operations
+- Potential malware or unauthorized access
+- Risk to continuity and internal services
+
+The analysis highlighted operational impact, containment principles,
+and long-term governance improvements while maintaining a non-automated,
+decision-support role.
+
+---
+
+### Scenario 3 – Regulatory & Reporting Assessment
+A regulatory and reporting-focused scenario was used to assess the assistant’s
+ability to:
+- Evaluate potential notification obligations
+- Reason about regulatory thresholds (e.g. GDPR, sector-specific rules)
+- Clarify internal governance, roles, and responsibilities
+
+The assistant correctly avoided legal conclusions, emphasized documentation,
+and framed reporting decisions as evidence-based responsibilities of
+appropriate internal stakeholders.
+
+---
+
+### Validation Outcome
+Across all scenarios, the assistant consistently demonstrated:
+- Structured and repeatable analysis
+- Governance-first reasoning
+- Responsible handling of uncertainty
+- Clear separation between analysis and decision-making
+
+This validation confirms the assistant’s suitability as an **enterprise-grade
+analytical support tool** for incident response, risk assessment, and
+compliance-oriented security workflows.
+
 ## Responsible AI Considerations
 
 This project explicitly avoids:
