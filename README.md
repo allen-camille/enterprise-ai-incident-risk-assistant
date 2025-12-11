@@ -300,6 +300,123 @@ This validation confirms the assistant’s suitability as an **enterprise-grade
 analytical support tool** for incident response, risk assessment, and
 compliance-oriented security workflows.
 
+## Version 3.2 – Evaluation & Groundedness Framework
+
+Version 3.2 introduces a more advanced evaluation methodology focused on groundedness, input fidelity, and analytical discipline.
+While previous versions validated structure, relevance, and coherence, V3.2 evaluates whether the assistant’s reasoning stays strictly within the evidence provided.
+
+This aligns the assistant with enterprise-grade expectations for auditability, investigative transparency, and risk-aware decision support.
+
+### Groundedness Evaluation (V3.2)
+
+Every answer is now assessed according to:
+
+Evidence-Based Summary (Grounded)
+
+Identifies what is actually provided in the user input.
+
+Restricts conclusions to observable facts only.
+
+Unknown / Missing Information
+
+Makes uncertainties explicit.
+
+Prevents hallucination and over-interpretation.
+
+Valid Interpretations (Not Grounded — Must Be Marked)
+
+Lists plausible interpretations but clearly labels them as assumptions.
+
+Ensures analytical honesty and traceability.
+
+Questions for the Analyst
+
+Encourages analysts to refine or extend the input.
+
+Creates a feedback loop between human and AI.
+
+This framework supports governance-compliant analysis in security, risk, and regulatory environments.
+
+### Why Some Responses Failed Evaluation (Reflections)
+
+During V3.2 testing, some responses received lower groundedness scores.
+Common reasons included:
+
+Inferring too much from minimal input
+
+Generalizing incident types without clear evidence
+
+Jumping to root cause instead of listing unknowns
+
+Providing recommendations not justified by the given scenario
+
+Not explicitly marking assumptions
+
+These insights informed improvements to the system prompt and the scoring rubric.
+
+By documenting failure cases, the project aligns with transparent model governance and supports future improvements.
+
+### Test Question Guidelines (V3.2 Example Bank)
+
+To test the assistant’s analytical maturity, the following categories of questions are recommended:
+
+1. Evidence-Limited Questions
+
+Purpose: Test how well the assistant handles ambiguous or incomplete input.
+Examples:
+
+“A user reports suspicious outbound traffic. Classify the incident.”
+
+“A system shows high CPU usage. What are possible interpretations?”
+
+“Logs indicate multiple failed authentications. What is missing before analysis?”
+
+2. Multi-Part Analytical Questions
+
+Purpose: Evaluate structured reasoning and separation of concepts.
+Examples:
+
+“Describe the steps in analyzing a suspected identity incident.”
+
+“How can compromised infrastructure be detected early?”
+
+“What governance functions must be involved in this type of incident?”
+
+3. Questions That Tempt Hallucination
+
+Purpose: Ensure groundedness rules activate correctly.
+Examples:
+
+“What caused this incident?” (with minimal input)
+
+“What data was exfiltrated?” (when no logs are provided)
+
+4. Governance-Focused Questions
+
+Purpose: Test alignment with ISMS, NIS2, ISO/IEC 27001.
+Examples:
+
+“Which governance roles should be involved when unauthorized access is suspected?”
+
+“How should uncertainties be documented for audit purposes?”
+
+These question types form a repeatable evaluation framework for future versions (V4+).
+
+### Summary of V3.2 Improvements
+
+Added groundedness constraints to ensure evidence-based reasoning
+
+Introduced explicit identification of uncertainty
+
+Added structured assumption-handling
+
+Improved evaluation metrics to analyze analytical maturity
+
+Created a reusable test question bank
+
+Prepared foundations for Version 4 (Governance-linked reasoning + RAG)
+
+
 ## Responsible AI Considerations
 
 This project explicitly avoids:
